@@ -1,0 +1,10 @@
+# Copy to terraform.tfvars. Secrets are NOT read from here: pass the Neon
+# connection string as TF_VAR_neon_connection_string so it never lands on disk.
+
+subscription_id = "00000000-0000-0000-0000-000000000000"
+location        = "eastus"
+name_prefix     = "admincon"
+
+entra_tenant_id     = "00000000-0000-0000-0000-000000000000"
+entra_api_audience  = "api://00000000-0000-0000-0000-000000000000"
+entra_web_client_id = "00000000-0000-0000-0000-000000000000"

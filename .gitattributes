@@ -1,0 +1,11 @@
+# Prettier is configured with endOfLine: "lf". Without this, Git's autocrlf on
+# Windows rewrites checkouts to CRLF and `npm run format:check` fails locally
+# while passing in CI. Normalize to LF in the repo and in every working copy.
+* text=auto eol=lf
+
+# Binary and generated files Git must not touch.
+*.png binary
+*.jpg binary
+*.webm binary
+*.ico binary
+package-lock.json -diff
